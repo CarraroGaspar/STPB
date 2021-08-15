@@ -17,17 +17,9 @@ function ScreenHeader({children}) {
 }
 
 function ScreenBody({children, size}) {
-    
-    return <View style={{flex:3, marginTop:-22, borderTopLeftRadius: 22, borderTopRightRadius: 22, backgroundColor: "white"}}>
+    return <View style={{flex:3, marginTop:-22, paddingTop: 22, paddingHorizontal: 10, borderTopLeftRadius: 22, borderTopRightRadius: 22, backgroundColor: "white"}}>
         {children}
     </View>
-}
-
-
-const styles = {
-    row1: {
-        flex: 2
-    }
 }
 
 export { ScreenHeader, ScreenBody }
